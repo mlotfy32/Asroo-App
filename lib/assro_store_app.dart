@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/core/app/env.variable.dart';
 
 class AsrooStoreApp extends StatelessWidget {
   const AsrooStoreApp({super.key});
@@ -7,7 +8,7 @@ class AsrooStoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: EnvVariable.instance.debugMood,
       title: 'Assro Store',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
