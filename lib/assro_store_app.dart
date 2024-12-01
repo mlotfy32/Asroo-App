@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AssroStoreApp extends StatelessWidget {
-  const AssroStoreApp({super.key});
+class AsrooStoreApp extends StatelessWidget {
+  const AsrooStoreApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -15,7 +15,7 @@ class AssroStoreApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Assro Store App'),
+          title: Text('Asroo Store App'),
           centerTitle: true,
         ),
       ),
