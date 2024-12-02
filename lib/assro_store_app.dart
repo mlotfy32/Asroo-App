@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/core/app/env.variable.dart';
 
-class AssroStoreApp extends StatelessWidget {
-  const AssroStoreApp({super.key});
+class AsrooStoreApp extends StatelessWidget {
+  const AsrooStoreApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: EnvVariable.instance.debugMood,
       title: 'Assro Store',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -15,7 +16,7 @@ class AssroStoreApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Assro Store App'),
+          title: Text('Asroo Store App'),
           centerTitle: true,
         ),
       ),
